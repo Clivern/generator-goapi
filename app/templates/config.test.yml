@@ -1,0 +1,27 @@
+# App configs
+app:
+  # App name
+  name: ${APP_NAME:-<%- package_name %>}
+  # Env mode (dev or prod)
+  mode: ${APP_MODE:-prod}
+  # HTTP port
+  port: ${API_PORT:-80}
+  # Hostname
+  hostname: ${API_HOSTNAME:-127.0.0.1}
+  # TLS configs
+  tls:
+    status: ${API_TLS_STATUS:-off}
+    crt_path: ${API_TLS_PEMPATH:-cert/server.crt}
+    key_path: ${API_TLS_KEYPATH:-cert/server.key}
+
+  # Global timeout
+  timeout: ${API_TIMEOUT:-50}
+
+  # Log configs
+  log:
+    # Log level, it can be debug, info, warn, error, panic, fatal
+    level: ${LOG_LEVEL:-info}
+    # Output can be stdout or abs path to log file /var/logs/<%- package_name %>.log
+    output: ${LOG_OUTPUT:-stdout}
+    # Format can be json
+    format: ${LOG_FORMAT:-json}

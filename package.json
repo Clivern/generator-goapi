@@ -1,0 +1,32 @@
+{
+  "name": "generator-goapi",
+  "version": "1.0.3",
+  "description": "Yeoman Generator for Golang Microservices",
+  "homepage": "https://github.com/clivern/generator-goapi",
+  "author": {
+    "name": "clivern",
+    "url": "https://github.com/clivern"
+  },
+  "files": [
+    "app"
+  ],
+  "main": "app/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "yeoman",
+    "generator",
+    "golang"
+  ],
+  "bugs": "https://github.com/clivern/generator-goapi/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clivern/generator-goapi.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "yeoman-generator": "^5.4.2"
+  },
+  "license": "MIT"
+}
