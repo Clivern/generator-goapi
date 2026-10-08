@@ -1,4 +1,4 @@
-FROM golang:1.17.3
+FROM golang:1.27.2
 
 ARG APP_VERSION=1.0.0
 
